@@ -1,0 +1,78 @@
+<!doctype html>
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Le tabelle</title>
+  </head>
+
+  <body>
+    <h1>Le tabelle</h1>
+
+    <!--
+      Le tabelle vengono create con il tag <table>.
+
+      Una tabella e' divisa in righe (<tr>, table row)
+      e le righe sono divise in celle.
+
+      Le celle sono di due tipi:
+      * celle di intestazione (<th>, table header)
+      * celle di dati (<td>, table data)
+
+      Le righe vengono poi raggruppate in base al
+      loro significato mediante i tag <thead>, <tfoot> e <tbody>.
+        * thead: contiene una o piu' righe di intestazione
+        * tfoot: contiene una o piu' righe di piede
+        * tbody: contiene le righe con i dati
+
+      In una tabella ci puo' essere un solo <thead> e
+      un solo <tfoot>, ma possono esserci piu' <tbody>
+      per dividere la tabella in sezioni.
+      
+      <thead> e <tfoot> devono essere inseriti all'inizio della tabella.
+
+      E' inoltre buona norma inserire un tag <caption>
+      contenente la descrizione dei dati presenti in tabella.
+    -->
+
+    <table>
+      <!-- descrizione della tabella -->
+      <caption>Una tabella di esempio</caption>
+
+      <!-- intestazione -->
+      <thead>
+        <tr>
+          <th>Intestazione 1</th>
+          <th>Intestazione 2</th>
+          <th>Intestazione 3</th>
+        </tr>
+      </thead>
+
+      <!-- piede della tabella -->
+      <tfoot>
+        <tr>
+          <td>Piede 1</td>
+          <td>Piede 2</td>
+          <td>Piede 3</td>
+        </tr>
+      </tfoot>
+
+      <!-- dati -->
+      <tbody>
+        <tr>
+          <td>Cella 1</td>
+          <td>Cella 2</td>
+          <td>Cella 3</td>
+        </tr>
+        <tr>
+          <td>Cella 4</td>
+          <td>Cella 5</td>
+          <td>Cella 6</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </body>
+
+</html>
