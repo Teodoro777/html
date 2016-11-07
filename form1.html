@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>I form</title>
+  </head>
+
+  <body>
+    <h1>I form</h1>
+
+    <!--
+      un form si crea con il tag <form>.
+      
+      Due attributi fondamentali sono action e method.
+      * action indica il file sul server che deve processare i dati del form,
+      * method indica il metodo con cui passare i dati (GET o POST).
+      
+      Quando non specificato esplicitamente viene impostato
+      un altro attributo, enctype, il cui valore di default e'
+      enctype="application/x-www-form-urlencoded"
+    -->
+    <form action="app.php" method="POST">
+      <!--
+        Molti elementi di un form si creano con il
+        tag input e si distinguono mediante l'attributo type.
+        * text crea un campo di testo
+        * password crea un campo di testo nascosto
+        * submit crea il pulsante di invio dati
+      -->
+      Username: <input type="text" name="username" placeholder="Inserisci qui il tuo username" autofocus>
+      Password: <input type="password" name="password" placeholder="Inserisci qui la tua password">
+      <input type="submit" name="login" value="Login">
+    </form>
+</html>
